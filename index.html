@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>MA'WA ARTS FEST 2026</title>
+	<meta name="description" content="MA'WA ARTS FEST 2026 — A celebration of contemporary and traditional arts." />
+	<style>
+		:root{--accent:#7c3aed;--accent-2:#06b6d4;--bg:#0f172a;--card:#0b1220;--muted:#94a3b8}
+		*{box-sizing:border-box}
+		html,body{height:100%;margin:0;font-family:Inter,Segoe UI,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071026 0%, #071730 60%);color:#e6eef8}
+		header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1100px;margin:0 auto}
+		.brand{display:flex;gap:12px;align-items:center}
+		.logo{width:48px;height:48px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:inline-grid;place-items:center;border-radius:8px;font-weight:700}
+		nav{display:flex;gap:18px;align-items:center}
+		nav a{color:inherit;text-decoration:none;font-weight:600}
+		.menu-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,.06);padding:8px;border-radius:8px;color:inherit}
+
+		.hero{max-width:1100px;margin:28px auto;padding:36px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);display:grid;grid-template-columns:1fr 360px;gap:24px}
+		.hero h1{margin:0;font-size:2.25rem;line-height:1.03}
+		.hero p{color:var(--muted);margin-top:12px}
+		.cta{margin-top:18px;display:flex;gap:12px}
+		.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;font-weight:700}
+		.btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.06)}
+
+		.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(2,6,23,0.02));padding:16px;border-radius:12px}
+		.lineup{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:24px 0}
+		.artist{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));display:flex;gap:12px;align-items:center}
+		.avatar{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#f97316);flex:0 0 56px;display:grid;place-items:center;font-weight:800}
+		.artist h4{margin:0;font-size:1rem}
+		.artist p{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+
+		.schedule{display:grid;gap:12px;margin:24px 0}
+		.schedule .day{display:flex;flex-direction:column;gap:8px}
+		.event{display:flex;justify-content:space-between;padding:10px;border-radius:10px;background:rgba(255,255,255,0.02)}
+
+		footer{max-width:1100px;margin:36px auto;padding:18px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+		@media (max-width:880px){
+			.hero{grid-template-columns:1fr;}
+			nav{display:none}
+			.menu-toggle{display:inline-block}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="brand">
+			<div class="logo">MA</div>
+			<div>
+				<div style="font-weight:800">MA'WA ARTS FEST</div>
+				<div style="font-size:12px;color:var(--muted)">2026 — March 12–14 • Al Masra, Baghdad</div>
+			</div>
+		</div>
+		<nav aria-label="Main navigation">
+			<a href="#lineup">Lineup</a>
+			<a href="#schedule">Schedule</a>
+			<a href="#venue">Venue</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div>
+				<h1>MA'WA ARTS FEST 2026</h1>
+				<p>Three days of contemporary and traditional arts featuring music, performance, visual art, workshops and community programs. A gathering for artists, families and curious minds.</p>
+				<div class="cta">
+					<a class="btn" href="#lineup">See Lineup</a>
+					<a class="btn secondary" href="#schedule">Full Schedule</a>
+				</div>
+			</div>
+			<aside class="card">
+				<strong>Quick Info</strong>
+				<p style="color:var(--muted);margin-top:8px">Dates: March 12–14, 2026<br>Location: Al Masra Cultural Park<br>Tickets: Free + Donation-based workshops</p>
+				<div style="margin-top:12px">
+					<a class="btn" href="#contact">Volunteer / Info</a>
+				</div>
+			</aside>
+		</section>
+
+		<section id="lineup" class="card" style="max-width:1100px;margin:0 auto">
+			<h2 style="margin:0 0 12px">Lineup</h2>
+			<div class="lineup">
+				<div class="artist">
+					<div class="avatar">AA</div>
+					<div>
+						<h4>Artist A</h4>
+						<p>Contemporary music & performance</p>
+					</div>
+				</div>
+				<div class="artist">
+					<div class="avatar">BB</div>
+					<div>
+						<h4>Artist B</h4>
+						<p>Traditional maqam ensemble</p>
+					</div>
+				</div>
+				<div class="artist">
+					<div class="avatar">CC</div>
+					<div>
+						<h4>Artist C</h4>
+						<p>Visual installations</p>
+					</div>
+				</div>
+				<div class="artist">
+					<div class="avatar">DD</div>
+					<div>
+						<h4>Artist D</h4>
+						<p>Workshops & community arts</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="schedule" class="card" style="max-width:1100px;margin:18px auto">
+			<h2 style="margin:0 0 12px">Schedule</h2>
+			<div class="schedule">
+				<div class="day">
+					<strong>March 12 — Opening Day</strong>
+					<div class="event"><div>18:00 — Opening Ceremony</div><div style="color:var(--muted)">Main Stage</div></div>
+					<div class="event"><div>19:30 — Artist A</div><div style="color:var(--muted)">Main Stage</div></div>
+				</div>
+				<div class="day">
+					<strong>March 13 — Workshops & Exhibitions</strong>
+					<div class="event"><div>10:00 — Community Workshop</div><div style="color:var(--muted)">Workshop Tent</div></div>
+					<div class="event"><div>20:00 — Artist B</div><div style="color:var(--muted)">Main Stage</div></div>
+				</div>
+				<div class="day">
+					<strong>March 14 — Closing</strong>
+					<div class="event"><div>16:00 — Panel: Future of Arts</div><div style="color:var(--muted)">Forum</div></div>
+					<div class="event"><div>19:00 — Closing Performance</div><div style="color:var(--muted)">Main Stage</div></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="venue" class="card" style="max-width:1100px;margin:18px auto">
+			<h2 style="margin:0 0 12px">Venue</h2>
+			<p style="color:var(--muted)">Al Masra Cultural Park — central outdoor spaces, exhibition pavilions, and a family area. Accessible entry and onsite first aid.</p>
+			<div style="height:220px;border-radius:10px;background:linear-gradient(180deg,#021021,#041228);display:grid;place-items:center;color:var(--muted);margin-top:12px">Map placeholder — add map iframe or image</div>
+		</section>
+
+		<section id="contact" class="card" style="max-width:1100px;margin:18px auto 80px">
+			<h2 style="margin:0 0 12px">Contact & Support</h2>
+			<p style="color:var(--muted)">For press, volunteering and partnership inquiries, email <a href="mailto:info@mawaartsfest.org" style="color:inherit;text-decoration:underline">info@mawaartsfest.org</a>.</p>
+			<div style="display:flex;gap:12px;margin-top:12px">
+				<a class="btn" href="#">Donate</a>
+				<a class="btn secondary" href="#">Volunteer</a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div>© MA'WA ARTS FEST 2026</div>
+		<div style="color:var(--muted)">Follow: @mawaartsfest</div>
+	</footer>
+
+	<script>
+		// Mobile menu toggle
+		const btn = document.querySelector('.menu-toggle');
+		btn && btn.addEventListener('click', ()=>{
+			const nav = document.querySelector('nav');
+			const expanded = btn.getAttribute('aria-expanded') === 'true';
+			btn.setAttribute('aria-expanded', String(!expanded));
+			if(nav) nav.style.display = expanded ? 'none' : 'flex';
+		});
+	</script>
+</body>
+</html>
